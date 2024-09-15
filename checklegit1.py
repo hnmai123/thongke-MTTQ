@@ -11,6 +11,7 @@ with pdfplumber.open(path) as pdf:
         for table in tables:
             for row in table:
                 data.append(row)
+                print(row)
 
 data = data[1:]
 df = pd.DataFrame(data)
